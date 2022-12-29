@@ -91,25 +91,25 @@ public class CourseEraTest extends BaseTest{
 		System.out.println("Time Duration: "+homepage.getCourseMonths().getText()+"("+homepage.getCourseHoursePerWeek().getText()+")");
 		System.out.println("---------------------------------------------------------------------------------------");
 		String MonthTxt1 = homepage.getCourseMonths().getText();
-		assertTrue(MonthTxt1.contains(homepage.Months1));
+// 		assertTrue(MonthTxt1.contains(homepage.Months1));
 
-		//Switch back to parent window
-		homepage.parentWindowHandle(driver);
+// 		//Switch back to parent window
+// 		homepage.parentWindowHandle(driver);
 
-		//Click on second course
-		homepage.getSecondCourse().click();	
-		homepage.UserWindowHandle(driver);
-		assertEquals(driver.getTitle(), homepage.Course2);
+// 		//Click on second course
+// 		homepage.getSecondCourse().click();	
+// 		homepage.UserWindowHandle(driver);
+// 		assertEquals(driver.getTitle(), homepage.Course2);
 
-		//Get Second Course information: 
-		System.out.println("Title of Second course is: "+homepage.getCourseName().getText());
-		System.out.println("Rating: "+homepage.getCourseRating().getText());
-		String ratingTxt2 = homepage.getCourseRating().getText();
-		assertTrue(ratingTxt2.contains(homepage.rating2));
-		System.out.println("Time Duration: "+homepage.getCourseMonths().getText()+"("+homepage.getCourseHoursePerWeek().getText()+")");
-		String MonthTxt2 = homepage.getCourseMonths().getText();
-		assertTrue(MonthTxt2.contains(homepage.Months2));
-		System.out.println("---------------------------------------------------------------------------------------");
+// 		//Get Second Course information: 
+// 		System.out.println("Title of Second course is: "+homepage.getCourseName().getText());
+// 		System.out.println("Rating: "+homepage.getCourseRating().getText());
+// 		String ratingTxt2 = homepage.getCourseRating().getText();
+// 		assertTrue(ratingTxt2.contains(homepage.rating2));
+// 		System.out.println("Time Duration: "+homepage.getCourseMonths().getText()+"("+homepage.getCourseHoursePerWeek().getText()+")");
+// 		String MonthTxt2 = homepage.getCourseMonths().getText();
+// 		assertTrue(MonthTxt2.contains(homepage.Months2));
+// 		System.out.println("---------------------------------------------------------------------------------------");
 		//driver.quit();
 	}
 
